@@ -1,0 +1,40 @@
+.img {
+  position: relative;
+  width:  410px;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
+.stylings{
+height:45px;
+background: #2C3E50;
+font-weight: bold;
+color: #FFFFFF;
+margin-top:5px;
+}
+
+canvas{
+
+  width:400px !important;
+  height:400px !important;
+
+}
+
+.img{
+  width: 100%;
+  height: 100%
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-cls{
+  background: #2C3E50;
+  color: #FFFFFF;
+}

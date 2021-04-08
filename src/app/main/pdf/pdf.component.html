@@ -1,0 +1,28 @@
+
+
+<div class="container">
+  <img class="img" src="../../../assets/background-images/bg-img.jpg">
+
+  <div class="centered">
+
+
+
+<input hidden type='file' accept="application/pdf" #file1 onclick="this.value = null" (change)="onSelectPdfFile($event)" >
+<!-- <mat-card  style="padding:4px"> -->
+<div style="display: flex;align-items: center;justify-content: center;">
+  <button class="col-sm-12 stylings"
+  mat-raised-button (click)="file1.click()">{{captionPdf}}</button>
+  &nbsp;
+  <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedPdf)" width="400px" height="400px"></iframe>
+&nbsp;
+<canvas id="myChart"  style="text-align: center;color:blue"></canvas>
+
+</div>
+<!-- </mat-card> -->
+<p></p>
+
+<div style="display: flex;align-items: center;justify-content: center;">
+<button mat-raised-button class="btn-cls" (click)="getChart()">Get Graph</button>
+</div>
+</div>
+</div>
